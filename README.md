@@ -27,7 +27,7 @@ The Qlearning method does not require tensor flow as the policy is defined.
 Reward scheme is kept simple: 1 for a Cross win, -1 for a Cross Win. Nots maximise for a reward of -1, Cross for +1.
 
 ## Unity3D ML Agents + tensorflow method:
-This is slightly tedious to setup as it involves an external Jupiter NoteBook Env. The skeltal structure has been given in the GIT but the Unity ML Agent / tensorflow libraries, Plugins need to be downloaded separetaly and folder structure maintained. Also note that it is best to download tensforflow in a tf folder in the "python" directory  and run as a Virtual Environment. 
+This is slightly tedious to setup as it involves an external Jupiter NoteBook Env. The skeltal structure has been given in the GIT but the Unity ML Agent / tensorflow libraries, Plugins need to be downloaded separetaly and folder structure maintained. Also note that it is recommended to download tensforflow in a tf folder in the "python" directory  and run as a Virtual Environment. 
 
 ### To Train:
 The instructions to create a new training environment is given in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Making-a-new-Unity-Environment.md). 

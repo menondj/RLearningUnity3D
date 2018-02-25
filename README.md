@@ -24,5 +24,36 @@ This repository illustrates Reinforcement learning for a 3X3 using two different
 
 
 The Qlearning method does not require tensor flow as the policy is defined.
+Reward scheme is kept simple: 1 for a Cross win, -1 for a Cross Win. Nots maximise for a reward of -1, Cross for +1.
+
+## Unity3D ML Agents + tensorflow method:
+This is slightly tedious to setup as it involves an external Jupiter NoteBook Env. The skeltal structure has been given in the GIT but the Unity ML Agent / tensorflow libraries, Plugins need to be downloaded separetaly and folder structure maintained. Also note that it is best to download tensforflow in a tf folder in the "python" directory  and run as a Virtual Environment. 
+
+### To Train:
+The instructions to create a new training environment is given in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Making-a-new-Unity-Environment.md). 
+
+Specfic to this GIT:
+1] Open scene TicTacToeTF.unity
+
+2] TicTacToeEnv Object drag, InteractiveTF.cs script.
+
+3] To Academy Object, drag TicTacToe.cs script. defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method.
+
+4] To Brain GameObject, drag Brain Script. Paramaters: State Size = 10 Continuous, Action Size = 9, Discrete. Action descriptions 0 - 8 denoting 9 positions in a 3x3 TicTacToe game.
+
+5] Set Brain Type = external. Go to Build Settings, build the game and put in python directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md).
+
+6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. It has found this to convrege in about 7-8 million global steps. Takes about 6-7 hours. 
+
+### To Run:
+7] Import back the bytes file into TFModel folder in Unity and run the TicTacToe game.
+
+
+
+
+
+
+
+
 
 

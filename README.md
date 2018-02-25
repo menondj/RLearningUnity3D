@@ -53,7 +53,7 @@ Note: The reward scheme: 1 for any win (be it NOT Or CROSS), -1 for a position p
 
 
 ### To Run:
-7] Import back the bytes file into TFModel folder in Unity and run the TicTacToe game.
+7] Import back the bytes file into TFModel folder in Unity and run the TicTacToe game after setting BrainType to 'Internal'
 
 
 

@@ -46,7 +46,11 @@ The instructions to create a new training environment is given in (https://githu
 
 6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. It has found this to converge in about 7-8 million global steps. Takes about 6-7 hours. 
 
+The tensorboards should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png
+
 Note: The reward scheme: 1 for any win (be it NOT Or CROSS), -1 for a position proposed which is already taken (a case where the the academey resets and starts afresh), -0.5 for a missed defence., -1 for a missed opportunity for a win.
+
+
 
 ### To Run:
 7] Import back the bytes file into TFModel folder in Unity and run the TicTacToe game.

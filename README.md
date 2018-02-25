@@ -43,7 +43,7 @@ Specfic to this GIT:
 
 5] Set Brain Type = external. Go to Build Settings, build the game and put in python directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md).
 
-6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. It has found this to convrege in about 7-8 million global steps. Takes about 6-7 hours. 
+6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. It has found this to converge in about 7-8 million global steps. Takes about 6-7 hours. 
 
 ### To Run:
 7] Import back the bytes file into TFModel folder in Unity and run the TicTacToe game.

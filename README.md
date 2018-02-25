@@ -44,7 +44,7 @@ The instructions to create a new training environment is given in (https://githu
 
 5] Set Brain Type = external. Go to Build Settings, build the game and put in python directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md).
 
-6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. It has found this to converge in about 7-8 million global steps. Takes about 6-7 hours. 
+6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. This should converge in about 7-8 million global steps. Takes about 6-7 hours. 
 
 The tensorboards should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png
 

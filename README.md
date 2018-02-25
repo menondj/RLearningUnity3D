@@ -1,6 +1,6 @@
 # RLearningUnity3D
 
-This repository illustrates Reinforcement learning for a 3X3 using two different techniques, Q Learning, and  Unity 3D Ml Agents (https://github.com/Unity-Technologies/ml-agents). The Q Learning technique does not require tensforflow librariesand is self contianed.
+This repository illustrates Reinforcement learning for a 3X3 using two different techniques, Q Learning, and  Unity 3D Ml Agents (https://github.com/Unity-Technologies/ml-agents). The Q Learning technique does not require tensforflow libraries and is self contianed.
 
 ## Q Learning Method:
 1] Open AITest.Unity. 

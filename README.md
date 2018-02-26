@@ -7,7 +7,7 @@ This repository illustrates Reinforcement learning for a 3x3 TicTacToe using two
 
 2] Attach RLearning.cs script to the TicTacToeEnv Object. 
 
-3] BackPlane: TicTacToeEnv Transform, TilePrefab: YellowTile Prefab, Not texture/Cross Textures: Drag the Sprites from the Texture folder. Drag You Transform onto you. Gap = 0 
+3] BackPlane: TicTacToeEnv Transform, TilePrefab: YellowTile Prefab, Not texture/Cross Textures: Drag the Sprites from the Texture folder. Drag You Transform onto you. Gap = 0 . Note: Incase the Sprites are not displayed properly, please refer https://docs.unity3d.com/Manual/SpriteCreator.html to recreate them from the Textures provided.
 
 4] Computer Symbol = 1 ( denoting Cross Symbol ), Epsilon = 0.1, Alpha = 0.5, Gamma = 0.9
 

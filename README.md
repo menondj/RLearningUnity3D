@@ -38,15 +38,15 @@ The instructions to create a new training environment is given in (https://githu
 
 2] TicTacToeEnv Object drag, InteractiveTF.cs script.
 
-3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML_agents/Template/Scripts/ ). Set defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method. To Agent Object, drag TicTacToeAgent.cs script. Drag the Brain Object. max step = 27 ( not used but kept so as not to prolong the game too much ). Drag 'Status', 'Scrore' transforms accordngly.
+3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML-Agents/Template/Scripts/ ). Set defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method. To Agent Object, drag TicTacToeTFAgent.cs script. Drag the Brain Object. max step = 27. Drag 'Status', 'Scrore' transforms accordngly.
 
-4] To Brain GameObject, drag Brain Script. Paramaters: State Size = 10 Continuous, Action Size = 9, Discrete. Action descriptions 0 - 8 denoting 9 positions in a 3x3 TicTacToe game.
+4] To Brain GameObject, drag Brain Script from ML-Agents/Scripts . Paramaters: State Size = 10 Continuous, Action Size = 9, Discrete. Action descriptions 0 - 8 denoting 9 positions in a 3x3 TicTacToe game.
 
-5] Set Brain Type = external. Go to Build Settings, build the game and put in python directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md).
+5] Set Brain Type = external. Go to Build Settings, build the game into the 'python' directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md). Also in Build settings, set ENABLE_TENSORFLOW in Scripting Define Symbols. After importing the Unity tensorflow Plugins. Otherwise it will not build as it wont recognise tensorflow libraries in Unity3D.
 
-6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. This should converge in about 7-8 million global steps. Takes about 6-7 hours. 
+6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. This should converge in about 7-8 million global steps. Takes about 6-7 hours on a 2.3Ghz i5 MacBookPro. 
 
-The tensorboards should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png
+The tensorboard o/p should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png. When training has stabilised, the draws will increase as the Agent would have learnt to defend.
 
 Note: The reward scheme: 1 for any win (be it NOT Or CROSS), -1 for a position proposed which is already taken (a case where the the academy resets and starts afresh), -0.5 for a missed defence., -1 for a missed opportunity for a win.
 

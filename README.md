@@ -38,7 +38,7 @@ The instructions to create a new training environment is given in (https://githu
 
 2] TicTacToeEnv Object drag, InteractiveTF.cs script.
 
-3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML-Agents/Template/Scripts/ ). Set defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method. To Agent Object, drag TicTacToeTFAgent.cs script. Drag the Brain Object. max step = 27. Drag 'Status', 'Scrore' transforms accordngly.
+3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML-Agents/Template/Scripts/ ). Set defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method. To Agent Object, drag TicTacToeTFAgent.cs script. Drag the Brain Object. max step = 27. Drag 'Status', 'Scrore' transforms accordngly. The You Sprite should be the Not Texture Sprite.
 
 4] To Brain GameObject, drag Brain Script from ML-Agents/Scripts . Paramaters: State Size = 10 Continuous, Action Size = 9, Discrete. Action descriptions 0 - 8 denoting 9 positions in a 3x3 TicTacToe game.
 

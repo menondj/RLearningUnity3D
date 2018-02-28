@@ -52,7 +52,7 @@ The instructions to create a new training environment is given in (https://githu
 
 5] Set Brain Type = external. Go to Build Settings, build the game into the 'python' directory. Follow the same process as in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Getting-Started-with-Balance-Ball.md). Also in Build settings, set ENABLE_TENSORFLOW in Scripting Define Symbols. After importing the Unity tensorflow Plugins. Otherwise it will not build as it won't recognise tensorflow libraries in Unity3D.
 
-6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. This should converge in about 7-8 million global steps. Takes about 6-7 hours on a 2.3Ghz i5 MacBookPro. [But you could work on other tasks seamlessly as most of the time it blocks on sockets dur to Unity-Python communication]
+6] The hyperperameters specific to TicTacToe has been kept in ppo.ipynb. This should converge in about 7-8 million global steps. Takes about 6-7 hours on a 2.3Ghz i5 MacBookPro. [But you could work on other tasks seamlessly as most of the time it blocks on sockets due to Unity-Jupiter communication]
 
 The tensorboard o/p should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png. When training has stabilised, the draws will increase as the Agent would have learnt to defend.
 

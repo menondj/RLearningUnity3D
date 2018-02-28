@@ -1,6 +1,6 @@
 # RLearningUnity3D
 
-This repository illustrates Reinforcement learning for a 3x3 TicTacToe using two different techniques, Q Learning, and  Unity 3D ML Agents V0.2 (https://github.com/Unity-Technologies/ml-agents). The Q Learning technique does not require tensforflow libraries and no extra libraries are required.
+This repository illustrates Reinforcement learning for a 3x3 TicTacToe using two different techniques, Q Learning, and  Unity 3D ML Agents V0.2 (https://github.com/Unity-Technologies/ml-agents). The Q Learning technique does not require tensforflow libraries and is self contained.
 
 ## Q Learning Method:
 1] Open AITest.Unity. 
@@ -35,7 +35,7 @@ The Qlearning method does not require tensor flow as the policy is defined.
 Reward scheme is kept simple: 1 for a Cross win, -1 for a Cross Win. Nots maximise for a reward of -1, Cross for +1.
 
 ## Unity3D ML Agents + tensorflow method:
-This is slightly tedious to setup as it involves an external Jupiter NoteBook Env. The skeltal structure has been given in the GIT but the Unity ML Agent / tensorflow libraries, Plugins need to be downloaded separately and folder structure maintained. But the power is that this actually figures out an optimal policy. Also note that it is recommended to download tensforflow in a tf folder in the "python" directory  and run as a Virtual Environment. 
+This is slightly tedious to setup as it involves an external Jupiter NoteBook Env. The skeltal structure has been given in the GIT but the Unity ML Agent / tensorflow libraries, Plugins need to be downloaded separately and folder structure maintained. But the power is that this actually figures out an optimal policy. Also note that it is recommended to download tensforflow in a 'tf' folder in the "python" directory  and run as a Virtual Environment. 
 
 ### To Train:
 The instructions to create a new training environment is given in (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Making-a-new-Unity-Environment.md). 
@@ -46,7 +46,7 @@ The instructions to create a new training environment is given in (https://githu
 
 2] TicTacToeEnv Object drag, InteractiveTF.cs script.
 
-3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML-Agents/Template/Scripts/ ). Set default Reset Parameters(2), which are defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method ( refer Step 3 of Q Learning method). To Agent Object, drag TicTacToeTFAgent.cs script. max step = 27. Drag 'Status', 'Scrore' transforms accordngly. The You Sprite should be the Not Texture Sprite. Symbol = 1.
+3] To Academy Object, drag TicTacToeTFAcademy.cs (located in ML-Agents/Template/Scripts/ ). Set default Reset Parameters(2), which are defence_penalty = -0.5, defence_reward = 0.5. The Transforms, Sprites as in QLearning method ( refer Step 3 of Q Learning method). To Agent Object, drag TicTacToeTFAgent.cs script. max step = 27. Drag 'Status', 'Scrore' transforms accordngly. The You Sprite should be the Not Texture Sprite. Symbol = 1. Important: Reset On Done: UNCHECKED.
 
 4] To Brain GameObject, drag Brain Script from ML-Agents/Scripts . Paramaters: State Size = 10 Continuous, Action Size = 9, Discrete. Action descriptions 0 - 8 denoting 9 positions in a 3x3 TicTacToe game. Drag the Brain Object onto the 'Brain' Element of TicTacToeAgent.cs. 
 
@@ -56,7 +56,7 @@ The instructions to create a new training environment is given in (https://githu
 
 The tensorboard o/p should look like https://github.com/menondj/RLearningUnity3D/blob/master/python/TensorBoard.png. When training has stabilised, the draws will increase as the Agent would have learnt to defend.
 
-Note: The reward scheme: 1 for any win (be it NOT Or CROSS), -1 for a position proposed which is already taken (a case where the the academy resets and starts afresh), -0.5 for a missed defence., -1 for a missed opportunity for a win.
+Note: The reward scheme: 1 for any win (be it NOT Or CROSS), -0.75 for a position proposed which is already taken (a case where the the academy resets and starts afresh), 0.5 for defence (e.g XXO, O being the last player's move) -0.5 for a missed defence., -0.75 for a missed opportunity for a win.
 
 
 ### To Run:
